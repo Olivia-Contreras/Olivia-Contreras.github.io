@@ -18,8 +18,8 @@
   <body>
     <header>
       <h1>Welcome to our wildlife website</h1>
-    </header>
-
+   
+<h3>
     <nav class="nav">
       <ul>
         <li><a href="#">Home</a></li>
@@ -32,7 +32,8 @@
         <input type="search" name="q" placeholder="Search query">
         <input type="submit" value="Go!">
       </form>
-    </nav>
+    </nav> </h3>
+     </header>
 
     <main>
       <article>
@@ -100,11 +101,16 @@
        
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
         
-        <audio controls>
+        <audio controls  aria-describedby="audio-transcript">
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
+
+        <p id="audio-transcript">
+        <strong>Transcript:</strong> Bears use visual displays, scent marking, and nesting behavior to attract mates during mating season.
+</p>
+
 
         <aside>
 
@@ -116,7 +122,7 @@
 
         </aside>
         <section class="comments">
-          <section class="show-hide">Show comments</section>
+          <button class="show-hide" type="button">Show comments</button>
 
           <section class="comment-wrapper">
 
