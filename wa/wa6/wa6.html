@@ -77,6 +77,16 @@
             color: var(--color-secondary);
         }
 
+         .body-text {
+            font-size: 1rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .small-text {
+            font-size: 0.75rem;
+            color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
+        }
+
         ul {
             margin-bottom: var(--spacing-md);
         }
@@ -129,6 +139,18 @@
             border-radius: var(--radius-md);
         }
 
+        .spacing-demo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .spacing-block {
+            background-color: var(--color-primary);
+            height: 40px;
+        }
+
         
 
     </style>
@@ -162,13 +184,17 @@
     </div> 
 
     <h2>Hi, I'm Olivia!</h2>
+
+    <div class="spacing-block" style="width: var(--spacing-xs)"></div>
+
     <h3>Here are some interesting things about me:</h3>
-    <ul>
+    <ul class="body-text">
         <li>I am a Creative Technology and Design major.</li>
         <li>I enjoy learning about UI and UX design and 3d modeling.</li>
         <li>In my free time I enjoy drawing, beading, games, and dancing.</li>
     </ul>
-
+    
+    <div class="spacing-block" style="width: var(--spacing-xs)"></div>
    
     </main>
 
