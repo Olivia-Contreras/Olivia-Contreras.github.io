@@ -34,7 +34,7 @@
             line-height: 1.6;
             background-color: var(--color-background);
             color: var(--color-text-dark);
-            padding: var(--spacing-xl);
+            padding: 20px;
         }
 
         .container {
@@ -45,7 +45,7 @@
         h1 {
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: 15px;
             color: var(--color-primary);
             text-align: center;
         }
@@ -67,6 +67,8 @@
          .body-text {
             font-size: 1rem;
             margin-bottom: var(--spacing-md);
+            margin-top:10px;
+            padding-left:20px;
         }
 
         .small-text {
@@ -170,12 +172,63 @@
         border: solid 10px #0b3948ff;
         border-radius: 10px;
         background-color: rgb(159, 163, 211);
+        text-align:center;
+    margin-bottom:20px;
     }
 
     .homeinfo{
         border: dotted 5px  #0b3948ff;
         border-radius: 10px;
+        margin-top: 20px;
         margin: 10px;
         padding: 10px 30px 10px 30px;
     }
+
+    main{
+        max-width:900px;
+    margin:auto;
+    }
         
+    footer{
+    text-align:center;
+    margin-top:40px;
+}
+
+@media (max-width: 768px){
+
+.navbar{
+    gap:10px;
+}
+
+.hobbie-images{
+    width:100%;
+}
+
+body{
+    padding:15px;
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px){
+
+.navbar{
+    flex-direction:column;
+    align-items:center;
+}
+.button{
+    display:block;
+    width:150px;
+    text-align:center;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size:22px;
+}
+
+}
