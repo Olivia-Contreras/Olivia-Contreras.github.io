@@ -76,6 +76,16 @@ collisionDetect()
     if (distance < this.size + ball.size)
     {
         ball.color = this.color = randomRGB();
+        const tempVelX= this.velX;
+        const tempVelY= this.velY;
+
+        this.velX = ball.velX;
+        this.velY = ball.velY
+
+        ball.velX = tempVelX;
+        ball.velY = tempVelY;
+
+        
     }
 }    }
 }
