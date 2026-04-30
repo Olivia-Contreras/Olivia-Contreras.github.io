@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Controller</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+
+    <header>
+    <h1>Volume Gamble</h1>
+    </header>
+
+
+    <p>Enter Target (0-100):</p>
+    <input type="number" class="targetInput" min="0" max="100">
+    <button class="setTarget">Set Target</button>
+    <p>Target: <span class="target"></span></p>
+    <p>Current:<span class="current">0</span></p>
+
+    <div class = "flip-card">
+        <div class="flip-card-inner card">
+            <div class = "flip-card-front">Press Deal
+
+            </div>
+
+            <div class="flip-card-back"><span class = "card-value">0</span></div>
+   </div>
+   </div>
+
+    <button class = "deal">Deal</button>
+    <button class = "lock" disabled>Lock in Volume</button>
+
+    <script src="final.js"></script>
+
+
+
+</body>
+</html>
