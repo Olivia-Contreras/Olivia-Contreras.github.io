@@ -1,3 +1,5 @@
+alert("script is running");
+
 const img = document.getElementById("outside-img");
 const audio = document.getElementById("outside-audio");
 
