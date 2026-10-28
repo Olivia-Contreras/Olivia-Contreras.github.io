@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin: 20px;
+}
+
+#outside-img {
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.15s;
+}
+
+#outside-img:hover {
+    transform: scale(1.05);
+}
+
+#outside-img:active {
+    transform: scale(0.95);
+}
